@@ -1,0 +1,125 @@
+#Author: your.email@your.domain.com
+#Keywords Summary :
+#Feature: List of scenarios.
+#Scenario: Business rule through list of steps with arguments.
+#Given: Some precondition step
+#When: Some key actions
+#Then: To observe outcomes or validation
+#And,But: To enumerate more Given,When,Then steps
+#Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
+#Examples: Container for s table
+#Background: List of steps run before each of the scenarios
+#""" (Doc Strings)
+#| (Data Tables)
+#@ (Tags/Labels):To group Scenarios
+#<> (placeholder)
+#""
+## (Comments)
+#Sample Feature Definition Template
+@tag
+Feature: Title of your feature
+  I want to use this template for my feature file
+
+  @tag1
+  Scenario: Title of your scenario                           [90m# component/PruebaComponent.feature:24[0m
+    [33mGiven [0m[33mI want to write a step with precondition component[0m [90m# PruebaComponentDefinition.i_want_to_write_a_step_with_precondition_component()[0m
+      [31mcucumber.api.PendingException: TODO: implement me
+      	at cl.scotiabank.automation.sgo.definition.Components.PruebaComponentDefinition.i_want_to_write_a_step_with_precondition_component(PruebaComponentDefinition.java:13)
+      	at ✽.Given I want to write a step with precondition component(component/PruebaComponent.feature:25)
+      [0m
+    [36mAnd [0m[36msome other precondition component[0m                    [90m# PruebaComponentDefinition.some_other_precondition_component()[0m
+    [36mWhen [0m[36mI complete action component[0m                         [90m# PruebaComponentDefinition.i_complete_action_component()[0m
+    [36mAnd [0m[36msome other action component[0m                          [90m# PruebaComponentDefinition.some_other_action_component()[0m
+    [36mAnd [0m[36myet another action component[0m                         [90m# PruebaComponentDefinition.yet_another_action_component()[0m
+    [36mThen [0m[36mI validate the outcomes component[0m                   [90m# PruebaComponentDefinition.i_validate_the_outcomes_component()[0m
+    [36mAnd [0m[36mcheck more outcomes component[0m                        [90m# PruebaComponentDefinition.check_more_outcomes_component()[0m
+
+  @tag2
+  Scenario Outline: Title of your scenario outline    [90m# component/PruebaComponent.feature:34[0m
+    [36mGiven [0m[36mI want to write a step with component<name>[0m
+    [36mWhen [0m[36mI check for the <value> in step component[0m
+    [36mThen [0m[36mI verify the <status> in step component[0m
+
+    Examples: 
+
+  @tag @tag2
+  Scenario Outline: Title of your scenario outline   [90m# component/PruebaComponent.feature:41[0m
+    [33mGiven [0m[33mI want to write a step with componentname[0m[33m[1m1[0m [90m# PruebaComponentDefinition.i_want_to_write_a_step_with_componentname(int)[0m
+      [31mcucumber.api.PendingException: TODO: implement me
+      	at cl.scotiabank.automation.sgo.definition.Components.PruebaComponentDefinition.i_want_to_write_a_step_with_componentname(PruebaComponentDefinition.java:55)
+      	at ✽.Given I want to write a step with componentname1(component/PruebaComponent.feature:35)
+      [0m
+    [36mWhen [0m[36mI check for the [0m[36m[1m5[0m[36m in step component[0m         [90m# PruebaComponentDefinition.i_check_for_the_in_step_component(int)[0m
+    [36mThen [0m[36mI verify the success in step component[0m      [90m# PruebaComponentDefinition.i_verify_the_success_in_step_component()[0m
+
+  @tag @tag2
+  Scenario Outline: Title of your scenario outline   [90m# component/PruebaComponent.feature:42[0m
+    [33mGiven [0m[33mI want to write a step with componentname[0m[33m[1m2[0m [90m# PruebaComponentDefinition.i_want_to_write_a_step_with_componentname(int)[0m
+      [31mcucumber.api.PendingException: TODO: implement me
+      	at cl.scotiabank.automation.sgo.definition.Components.PruebaComponentDefinition.i_want_to_write_a_step_with_componentname(PruebaComponentDefinition.java:55)
+      	at ✽.Given I want to write a step with componentname2(component/PruebaComponent.feature:35)
+      [0m
+    [36mWhen [0m[36mI check for the [0m[36m[1m7[0m[36m in step component[0m         [90m# PruebaComponentDefinition.i_check_for_the_in_step_component(int)[0m
+    [36mThen [0m[36mI verify the Fail in step component[0m         [90m# PruebaComponentDefinition.i_verify_the_Fail_in_step_component()[0m
+#Author: your.email@your.domain.com
+#Keywords Summary :
+#Feature: List of scenarios.
+#Scenario: Business rule through list of steps with arguments.
+#Given: Some precondition step
+#When: Some key actions
+#Then: To observe outcomes or validation
+#And,But: To enumerate more Given,When,Then steps
+#Scenario Outline: List of steps for data-driven as an Examples and <placeholder>
+#Examples: Container for s table
+#Background: List of steps run before each of the scenarios
+#""" (Doc Strings)
+#| (Data Tables)
+#@ (Tags/Labels):To group Scenarios
+#<> (placeholder)
+#""
+## (Comments)
+#Sample Feature Definition Template
+@tag
+Feature: Title of your feature
+  I want to use this template for my feature file
+
+  @tag1
+  Scenario: Title of your scenario [90m# steps/PruebaSteps.feature:24[0m
+    [33mGiven [0m[33msome other precondition[0m  [90m# PruebaStepsDefinition.some_other_precondition()[0m
+      [31mcucumber.api.PendingException: TODO: implement me
+      	at cl.scotiabank.automation.sgo.definition.steps.PruebaStepsDefinition.some_other_precondition(PruebaStepsDefinition.java:14)
+      	at ✽.Given some other precondition(steps/PruebaSteps.feature:25)
+      [0m
+    [36mWhen [0m[36mI complete action[0m         [90m# PruebaStepsDefinition.i_complete_action()[0m
+    [36mAnd [0m[36msome other action[0m          [90m# PruebaStepsDefinition.some_other_action()[0m
+    [36mAnd [0m[36myet another action[0m         [90m# PruebaStepsDefinition.yet_another_action()[0m
+    [36mThen [0m[36mI validate the outcomes[0m   [90m# PruebaStepsDefinition.i_validate_the_outcomes()[0m
+    [36mAnd [0m[36mcheck more outcomes[0m        [90m# PruebaStepsDefinition.check_more_outcomes()[0m
+
+  @tag2
+  Scenario Outline: Title of your scenario outline [90m# steps/PruebaSteps.feature:33[0m
+    [36mGiven [0m[36mI want to write a step with <name>[0m
+    [36mWhen [0m[36mI check for the <value> in step[0m
+    [36mThen [0m[36mI verify the <status> in step[0m
+
+    Examples: 
+
+  @tag @tag2
+  Scenario Outline: Title of your scenario outline [90m# steps/PruebaSteps.feature:40[0m
+    [33mGiven [0m[33mI want to write a step with name[0m[33m[1m1[0m        [90m# PruebaStepsDefinition.i_want_to_write_a_step_with_name(int)[0m
+      [31mcucumber.api.PendingException: TODO: implement me
+      	at cl.scotiabank.automation.sgo.definition.steps.PruebaStepsDefinition.i_want_to_write_a_step_with_name(PruebaStepsDefinition.java:50)
+      	at ✽.Given I want to write a step with name1(steps/PruebaSteps.feature:34)
+      [0m
+    [36mWhen [0m[36mI check for the [0m[36m[1m5[0m[36m in step[0m                 [90m# PruebaStepsDefinition.i_check_for_the_in_step(int)[0m
+    [36mThen [0m[36mI verify the success in step[0m              [90m# PruebaStepsDefinition.i_verify_the_success_in_step()[0m
+
+  @tag @tag2
+  Scenario Outline: Title of your scenario outline [90m# steps/PruebaSteps.feature:41[0m
+    [33mGiven [0m[33mI want to write a step with name[0m[33m[1m2[0m        [90m# PruebaStepsDefinition.i_want_to_write_a_step_with_name(int)[0m
+      [31mcucumber.api.PendingException: TODO: implement me
+      	at cl.scotiabank.automation.sgo.definition.steps.PruebaStepsDefinition.i_want_to_write_a_step_with_name(PruebaStepsDefinition.java:50)
+      	at ✽.Given I want to write a step with name2(steps/PruebaSteps.feature:34)
+      [0m
+    [36mWhen [0m[36mI check for the [0m[36m[1m7[0m[36m in step[0m                 [90m# PruebaStepsDefinition.i_check_for_the_in_step(int)[0m
+    [36mThen [0m[36mI verify the Fail in step[0m                 [90m# PruebaStepsDefinition.i_verify_the_Fail_in_step()[0m

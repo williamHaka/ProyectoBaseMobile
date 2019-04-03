@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="6" tests="6" time="0.111206">
+<testcase classname="Title of your feature" name="Title of your scenario" time="0.108248">
+<skipped><![CDATA[Given I want to write a step with precondition component....................pending
+And some other precondition component.......................................skipped
+When I complete action component............................................skipped
+And some other action component.............................................skipped
+And yet another action component............................................skipped
+Then I validate the outcomes component......................................skipped
+And check more outcomes component...........................................skipped
+]]></skipped>
+</testcase>
+<testcase classname="Title of your feature" name="Title of your scenario outline" time="0.001777">
+<skipped><![CDATA[Given I want to write a step with componentname1............................pending
+When I check for the 5 in step component....................................skipped
+Then I verify the success in step component.................................skipped
+]]></skipped>
+</testcase>
+<testcase classname="Title of your feature" name="Title of your scenario outline 2" time="0.000281">
+<skipped><![CDATA[Given I want to write a step with componentname2............................pending
+When I check for the 7 in step component....................................skipped
+Then I verify the Fail in step component....................................skipped
+]]></skipped>
+</testcase>
+<testcase classname="Title of your feature" name="Title of your scenario" time="0.00018">
+<skipped><![CDATA[Given some other precondition...............................................pending
+When I complete action......................................................skipped
+And some other action.......................................................skipped
+And yet another action......................................................skipped
+Then I validate the outcomes................................................skipped
+And check more outcomes.....................................................skipped
+]]></skipped>
+</testcase>
+<testcase classname="Title of your feature" name="Title of your scenario outline" time="0.00033">
+<skipped><![CDATA[Given I want to write a step with name1.....................................pending
+When I check for the 5 in step..............................................skipped
+Then I verify the success in step...........................................skipped
+]]></skipped>
+</testcase>
+<testcase classname="Title of your feature" name="Title of your scenario outline 2" time="0.00039">
+<skipped><![CDATA[Given I want to write a step with name2.....................................pending
+When I check for the 7 in step..............................................skipped
+Then I verify the Fail in step..............................................skipped
+]]></skipped>
+</testcase>
+</testsuite>
